@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Neighborhood Skill Exchange</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1>Neighborhood Skill Exchange</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="listing.html">Skill List</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </center>
+    </header>
+    <section class="settings">
+        <div class="settings-content">
+            <h2>Account Settings</h2>
+            <h3>Password Change</h3>
+            <form action="#" method="post" class="password-change-form">
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password" name="current-password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit" class="btn">Change Password</button>
+            </form>
+            <h3>Email Preferences</h3>
+            <form action="#" method="post" class="email-preferences-form">
+                <label for="email-notifications">Receive Email Notifications:</label>
+                <input type="checkbox" id="email-notifications" name="email-notifications">
+                <button type="submit" class="btn">Save Preferences</button>
+            </form>
+            <h3>Privacy Settings</h3>
+            <form action="#" method="post" class="privacy-settings-form">
+                <label for="privacy-level">Privacy Level:</label>
+                <select id="privacy-level" name="privacy-level">
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                </select>
+                <button type="submit" class="btn">Save Settings</button>
+            </form>
+            <h2>Account Management</h2>
+            <button class="btn delete-account">Delete Account</button>
+            <button class="btn deactivate-account">Deactivate Account</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange</p>
+    </footer>
+</body>
+</html>

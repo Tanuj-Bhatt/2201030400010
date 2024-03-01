@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications - Neighborhood Skill Exchange</title>
+    <link rel="stylesheet" href="notifications.css" />
+  </head>
+  <body>
+    <header>
+    <center>
+      <h1>Neighborhood Skill Exchange</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="listing.html">Skill List</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </center>
+    </header>
+    <section class="notifications">
+      <div class="notifications-content">
+        <h2>Notifications</h2>
+        <ul>
+          <li><a href="messages.html"> Message from User 1</a></li>
+          <li><a href="messages.html">Request from User 2</a></li>
+          <!-- Add more notifications as needed -->
+        </ul>
+        <h3>Notification Preferences</h3>
+        <form
+          action="#"
+          method="post"
+          class="notification-preferences-form"
+          id="notification-preferences-form"
+        >
+          <label for="email-notifications">Receive Email Notifications:</label>
+          <input
+            type="checkbox"
+            id="email-notifications"
+            name="email-notifications"
+          />
+          <button type="submit" class="btn">Save Preferences</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Neighborhood Skill Exchange</p>
+    </footer>
+
+    <script>
+      // Function to handle form submission
+      document
+        .getElementById("notification-preferences-form")
+        .addEventListener("submit", function (event) {
+          // Prevent default form submission
+          event.preventDefault();
+          // Display alert message
+          alert("Preferences saved!");
+        });
+    </script>
+  </body>
+</html>
